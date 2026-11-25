@@ -39,7 +39,7 @@ from aiogram.types import (CallbackQuery, ChatMemberUpdated, InlineKeyboardButto
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 log = logging.getLogger("yangzi")
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "9197926027:AAGJEvRfGm1Skzx35rw4hpSAh5JIWhnFvHQ")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "9221182374:AAFcgLLFUt6peiE6usHJ7-b_TSNZ-SYZTLE")
 DB_PATH = os.getenv("DB_PATH", "yangzi.db")
 ENV_ADMINS = {int(x) for x in re.findall(r"\d+", os.getenv("ADMIN_IDS", "7949818604"))}
 FORCE_CHANNEL = os.getenv("FORCE_CHANNEL", "@Swag_Farsi")
@@ -58,6 +58,7 @@ def _d(key, label, default):
 
 # ---- متن‌ها
 _d("t_menu", "عنوان منوی اصلی", "منوی اصلی یانگزی پسرعمو 👽:")
+
 _d("t_added", "پیام اد شدن ربات به گروه", "اد شدم پسرعمو 👽\nبنویس منو")
 _d("t_force_join", "جوین اجباری (پیوی)",
    "پسرعمو برای استفاده از ربات اول باید تو کانال ما عضو بشی 📢\n\nبعد از عضویت روی «عضو شدم» بزن ✅")
@@ -2648,7 +2649,7 @@ def adm_sub_home():
         [ab("🎁 کدهای هدیه", "gifts"), ab("📊 آمار", "stats")],
         [ab("🏠 مدیریت املاک", "props")],
     ]
-    return "🛠 پنل ادمین درجه ۲ یانگزی 👽\n\nیکی رو انتخاب کن:", mk(rows)
+    return "🛠 پنل مدیریت یانگزیک👽\n\nیکی رو انتخاب کن:", mk(rows)
 
 
 def parse_price(s):
